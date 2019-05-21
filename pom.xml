@@ -39,9 +39,33 @@
         </license>
     </licenses>
 
+        <repositories>
+                <repository>
+                        <id>jboss-developer-staging-repository</id>
+                        <url>http://jboss-developer.github.io/temp-maven-repo/</url>
+                        <releases>
+                                <enabled>true</enabled>
+                        </releases>
+                        <snapshots>
+                                <enabled>false</enabled>
+                        </snapshots>
+                </repository>
+                <repository>
+                        <id>jboss-enterprise-maven-repository</id>
+                        <url>https://maven.repository.redhat.com/ga/</url>
+                        <releases>
+                                <enabled>true</enabled>
+                        </releases>
+                        <snapshots>
+                                <enabled>false</enabled>
+                        </snapshots>
+                </repository>
+        </repositories>
+
+
     <properties>
-        <version.jboss.bom.eap>7.1.0.GA</version.jboss.bom.eap>
-        <version.org.jboss.eap.wildfly.ejb.client.bom>7.1.0.GA-redhat-11</version.org.jboss.eap.wildfly.ejb.client.bom>
+        <version.jboss.bom.eap>7.1.5.GA</version.jboss.bom.eap>
+        <version.org.jboss.eap.wildfly.ejb.client.bom>7.1.5.GA-redhat-00002</version.org.jboss.eap.wildfly.ejb.client.bom>
 
         <!-- A base list of dependency and plug-in version used in the various quick starts. -->
         <version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
